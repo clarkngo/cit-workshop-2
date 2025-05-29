@@ -8,21 +8,37 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 // Sample list of questions with options and answers
 const questions = [
   {
-    question: 'What is the capital of France?',
-    options: ['Madrid', 'Berlin', 'Paris', 'Rome'],
-    answer: 'Paris',
+    question: 'What is the purpose of useState in React Native?',
+    options: [
+      'To create animations',
+      'To define component styles',
+      'To manage state in a functional component',
+      'To handle navigation'
+    ],
+    answer: 'To manage state in a functional component',
   },
   {
-    question: 'Which language is used for React Native?',
-    options: ['Swift', 'Java', 'JavaScript', 'Kotlin'],
-    answer: 'JavaScript',
+    question: 'What does conditional rendering allow you to do?',
+    options: [
+      'Prevent rendering of specific components based on logic',
+      'Update the Expo Go app',
+      'Change font sizes globally',
+      'Import multiple components at once'
+    ],
+    answer: 'Prevent rendering of specific components based on logic',
   },
   {
-    question: 'Who developed the theory of relativity?',
-    options: ['Newton', 'Tesla', 'Einstein', 'Edison'],
-    answer: 'Einstein',
+    question: 'Why would you use TouchableOpacity in React Native?',
+    options: [
+      'To show an alert dialog',
+      'To display scrollable content',
+      'To provide a button that responds visually to touches',
+      'To apply a CSS class'
+    ],
+    answer: 'To provide a button that responds visually to touches',
   },
 ];
+
 
 export default function FlashcardQuiz() {
   // React state hooks to track question index, selected option, score, and whether quiz is finished
