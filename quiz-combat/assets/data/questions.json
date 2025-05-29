@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What is the purpose of the 'expo-av' package in this app?",
+    "options": [
+      "To display animations",
+      "To manage audio playback",
+      "To connect to a database",
+      "To style components"
+    ],
+    "answer": "To manage audio playback"
+  },
+  {
+    "question": "Why is 'Animated.Value' used with 'useRef' in this component?",
+    "options": [
+      "To store the player's name",
+      "To trigger a component reload",
+      "To animate the enemy scaling effect",
+      "To save game data"
+    ],
+    "answer": "To animate the enemy scaling effect"
+  },
+  {
+    "question": "What does 'TouchableOpacity' do in React Native?",
+    "options": [
+      "Plays a sound",
+      "Animates components",
+      "Creates a button with visual feedback on press",
+      "Stores local data"
+    ],
+    "answer": "Creates a button with visual feedback on press"
+  },
+  {
+    "question": "What does Expo Go allow developers to do?",
+    "options": [
+      "Upload apps to the App Store",
+      "Run React Native apps instantly on a mobile device",
+      "Compile Android native modules",
+      "Manage GitHub repositories"
+    ],
+    "answer": "Run React Native apps instantly on a mobile device"
+  },
+  {
+    "question": "Which hook is used to maintain a value across renders without causing re-renders?",
+    "options": [
+      "useState",
+      "useEffect",
+      "useRef",
+      "useMemo"
+    ],
+    "answer": "useRef"
+  },
+  {
+    "question": "What does the 'Alert.alert' function do in this code?",
+    "options": [
+      "Saves user data to storage",
+      "Displays a modal message to the user",
+      "Triggers an animation",
+      "Renders enemy HP"
+    ],
+    "answer": "Displays a modal message to the user"
+  },
+  {
+    "question": "What is the purpose of the 'View' component in React Native?",
+    "options": [
+      "To display text only",
+      "To play audio files",
+      "To create layout containers for other components",
+      "To manage animations"
+    ],
+    "answer": "To create layout containers for other components"
+  },
+  {
+    "question": "What is the function of the 'Text' component?",
+    "options": [
+      "To handle button presses",
+      "To display text on the screen",
+      "To store global state",
+      "To style other components"
+    ],
+    "answer": "To display text on the screen"
+  },
+  {
+    "question": "Why is 'StyleSheet.create' used in React Native?",
+    "options": [
+      "To define reusable styles in a structured format",
+      "To create animations",
+      "To manage app navigation",
+      "To build modals"
+    ],
+    "answer": "To define reusable styles in a structured format"
+  },
+  {
+    "question": "What does the 'Image' component require to render correctly?",
+    "options": [
+      "An 'alt' attribute",
+      "An 'href' property",
+      "A 'source' property with a valid image reference",
+      "A 'style' without dimensions"
+    ],
+    "answer": "A 'source' property with a valid image reference"
+  },
+  {
+    "question": "Which component is best for handling press events with visual feedback?",
+    "options": [
+      "View",
+      "Image",
+      "TouchableOpacity",
+      "FlatList"
+    ],
+    "answer": "TouchableOpacity"
+  },
+  {
+    "question": "What is a good reason to use 'Animated.Image' instead of 'Image'?",
+    "options": [
+      "To apply animations like scaling or fading",
+      "To improve rendering speed",
+      "To load remote images faster",
+      "To style the app globally"
+    ],
+    "answer": "To apply animations like scaling or fading"
+  },
+  {
+    "question": "Which component is used to display scrollable content?",
+    "options": [
+      "TouchableOpacity",
+      "ScrollView",
+      "FlatList",
+      "Animated.View"
+    ],
+    "answer": "ScrollView"
+  },
+  {
+    "question": "What does 'useState' allow you to do in a functional component?",
+    "options": [
+      "Fetch API data",
+      "Maintain state between renders",
+      "Style components",
+      "Create a navigation stack"
+    ],
+    "answer": "Maintain state between renders"
+  },
+  {
+    "question": "How does 'useEffect' function in React Native?",
+    "options": [
+      "To render components conditionally",
+      "To handle side effects like data fetching",
+      "To define styles",
+      "To route between screens"
+    ],
+    "answer": "To handle side effects like data fetching"
+  },
+  {
+    "question": "What is the primary use of 'FlatList'?",
+    "options": [
+      "To create modal views",
+      "To efficiently render large lists of data",
+      "To store async data",
+      "To animate views"
+    ],
+    "answer": "To efficiently render large lists of data"
+  },
+  {
+    "question": "Which hook gives access to a mutable ref object?",
+    "options": [
+      "useMemo",
+      "useCallback",
+      "useRef",
+      "useContext"
+    ],
+    "answer": "useRef"
+  },
+  {
+    "question": "What property controls layout direction in React Native?",
+    "options": [
+      "justifyContent",
+      "alignItems",
+      "flexDirection",
+      "position"
+    ],
+    "answer": "flexDirection"
+  },
+  {
+    "question": "What does 'justifyContent' control in a Flexbox layout?",
+    "options": [
+      "Cross-axis alignment",
+      "Main-axis alignment",
+      "Z-index layering",
+      "Child height"
+    ],
+    "answer": "Main-axis alignment"
+  },
+  {
+    "question": "Which component should you use for performant infinite scrolling?",
+    "options": [
+      "ScrollView",
+      "Image",
+      "FlatList",
+      "View"
+    ],
+    "answer": "FlatList"
+  },
+  {
+    "question": "Which style property rounds the corners of a component?",
+    "options": [
+      "cornerRadius",
+      "borderWidth",
+      "borderRadius",
+      "padding"
+    ],
+    "answer": "borderRadius"
+  },
+  {
+    "question": "What does 'position: absolute' allow in styling?",
+    "options": [
+      "Relative layout",
+      "Component overlap and fixed positioning",
+      "Flex alignment",
+      "Scroll syncing"
+    ],
+    "answer": "Component overlap and fixed positioning"
+  },
+  {
+    "question": "What does 'require' do when used with images?",
+    "options": [
+      "Asynchronously fetches images",
+      "Includes image in the app bundle",
+      "Creates a placeholder",
+      "Applies a style"
+    ],
+    "answer": "Includes image in the app bundle"
+  },
+  {
+    "question": "Which audio format does Expo AV support by default?",
+    "options": [
+      "WAV and MP3",
+      "OGG and FLAC",
+      "MP3 only",
+      "AAC only"
+    ],
+    "answer": "WAV and MP3"
+  },
+  {
+    "question": "Which method is used to start an animation sequence?",
+    "options": [
+      "Animated.launch",
+      "Animated.start",
+      "Animated.sequence().start()",
+      "Animated.run()"
+    ],
+    "answer": "Animated.sequence().start()"
+  },
+  {
+    "question": "Which prop makes audio loop using Expo AV?",
+    "options": [
+      "loop",
+      "setIsLoopingAsync(true)",
+      "autoRepeat",
+      "repeatAudio"
+    ],
+    "answer": "setIsLoopingAsync(true)"
+  },
+  {
+    "question": "Which style prop sets spacing inside a component?",
+    "options": [
+      "margin",
+      "border",
+      "padding",
+      "flex"
+    ],
+    "answer": "padding"
+  },
+  {
+    "question": "What is 'Alert.alert()' used for in React Native?",
+    "options": [
+      "Create toast messages",
+      "Show modal alerts to the user",
+      "Handle navigation",
+      "Store local notifications"
+    ],
+    "answer": "Show modal alerts to the user"
+  },
+  {
+    "question": "What does '.sort(() => 0.5 - Math.random())' achieve?",
+    "options": [
+      "Sorts in ascending order",
+      "Randomly shuffles an array",
+      "Sorts by string length",
+      "Returns the first half of the array"
+    ],
+    "answer": "Randomly shuffles an array"
+  },
+  {
+    "question": "What is the function of 'setTimeout' in React Native?",
+    "options": [
+      "Run a function repeatedly",
+      "Call a function after a delay",
+      "Block rendering",
+      "Animate components"
+    ],
+    "answer": "Call a function after a delay"
+  }
+]

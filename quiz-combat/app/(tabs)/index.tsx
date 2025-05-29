@@ -3,27 +3,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Animated, Image, Alert } from 'react-native';
 import { Audio } from 'expo-av';
 import { useHighScore } from '../../hooks/useHighScore';
+import questionsData from '../../assets/data/questions.json';
 
-const questionBank = [
-  { question: 'What is the primary function of a mobile backend server?', options: ['Serve UI elements', 'Handle business logic and data storage', 'Enhance GPU performance', 'Render native components'], answer: 'Handle business logic and data storage' },
-  { question: 'Which of the following best describes REST?', options: ['Stateful API protocol', 'Database language', 'Architectural style for networked systems', 'Encryption protocol'], answer: 'Architectural style for networked systems' },
-  { question: 'What is a key advantage of using a CDN in mobile apps?', options: ['Increases power consumption', 'Speeds up content delivery', 'Improves database queries', 'Renders animations'], answer: 'Speeds up content delivery' },
-  { question: 'Why use caching in mobile app architecture?', options: ['To use more memory', 'To reduce latency and server load', 'To encrypt data', 'To slow down rendering'], answer: 'To reduce latency and server load' },
-  { question: 'What component handles user authentication securely?', options: ['Frontend component', 'Session manager', 'OAuth provider', 'UI toolkit'], answer: 'OAuth provider' },
-  { question: 'Which database type is best suited for real-time chat apps?', options: ['Relational DB', 'Graph DB', 'Time-series DB', 'NoSQL DB'], answer: 'NoSQL DB' },
-  { question: 'What is load balancing?', options: ['Distributing traffic across multiple servers', 'Encrypting mobile data', 'Cleaning cache', 'Managing source control'], answer: 'Distributing traffic across multiple servers' },
-  { question: 'Why is offline mode important in mobile apps?', options: ['Reduces app size', 'Improves animations', 'Provides usability without network', 'Encrypts passwords'], answer: 'Provides usability without network' },
-  { question: 'What is the benefit of using Firebase in mobile apps?', options: ['UI rendering', 'Gesture recognition', 'Real-time database and authentication', 'GPU acceleration'], answer: 'Real-time database and authentication' },
-  { question: 'What pattern separates concerns between UI and logic?', options: ['MVC/MVVM', 'OOP', 'DRY', 'CRUD'], answer: 'MVC/MVVM' },
-  { question: 'Which service would be best to send push notifications?', options: ['CDN', 'OAuth', 'Firebase Cloud Messaging', 'Webhooks'], answer: 'Firebase Cloud Messaging' },
-  { question: 'What does API rate limiting help prevent?', options: ['Fast app speed', 'Overuse of server resources', 'Offline usage', 'Session timeout'], answer: 'Overuse of server resources' },
-  { question: 'Why should you use environment variables in mobile development?', options: ['To store private configuration like API keys', 'To boost battery life', 'To enhance animations', 'To replace Redux'], answer: 'To store private configuration like API keys' },
-  { question: 'What is the best way to persist state locally on device?', options: ['Redux only', 'Cloud DB', 'AsyncStorage or SQLite', 'DOM Storage'], answer: 'AsyncStorage or SQLite' },
-  { question: 'What role does a reverse proxy play in architecture?', options: ['Encrypt local files', 'Enhance battery performance', 'Forward client requests to backend servers', 'Improve UI performance'], answer: 'Forward client requests to backend servers' },
-  // Add 35 more if needed
-];
-
-const questions = questionBank.sort(() => 0.5 - Math.random()).slice(0, 15);
+const questions = questionsData.sort(() => 0.5 - Math.random()).slice(0, 15);
 
 const enemyPool = [
   { name: 'Slime', hp: 25, image: require('../../assets/images/slime.png') },
