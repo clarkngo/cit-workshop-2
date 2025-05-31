@@ -1,4 +1,4 @@
-# 01-hello-world-blank-template
+# 01-hello-world
 1. Navigate to `exercises/01-hello-world`. Right-click then choose `Open in Integrated Terminal`
 
 2. In your terminal: 
