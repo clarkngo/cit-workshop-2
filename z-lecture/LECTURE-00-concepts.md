@@ -38,8 +38,6 @@ Avoid setup headaches (no need to install Node.js, Expo, or anything locally)
 
 ✅ Students just open the Codespace, start coding, and run Expo — no local setup needed.
 
-## 🐍 What is ExpressJS and Why Do We Use It Later?
-ExpressJS is a lightweight and flexible web framework for Node.js that lets us build APIs quickly and with minimal setup. In our later sessions, we’ll use Express to create a simple backend that serves quiz questions and accepts scores submitted from the app. It’s a great choice because it uses JavaScript — the same language we’re using on the frontend with React Native — so there’s no context switch for beginners. By learning Express, students also get a real-world introduction to how mobile apps communicate with servers through REST APIs. This experience is foundational for full-stack development and mirrors how modern apps are built today.
 
 ## 🧩 Putting It All Together
 In this course, you'll build a mobile app using:
@@ -49,5 +47,3 @@ React Native for frontend logic and layout
 Expo to simplify development and testing
 
 GitHub & Codespaces for writing and sharing code without setup
-
-ExpressJS to serve real data and simulate how apps talk to the cloud

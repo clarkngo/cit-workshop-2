@@ -1,41 +1,56 @@
-import React, { useState } from 'react';
+import React, { _____1_____ } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
+// Sample list of questions with options and answers
 const questions = [
   {
-    question: 'What is the capital of France?',
-    options: ['Madrid', 'Berlin', 'Paris', 'Rome'],
-    answer: 'Paris',
+    question: 'What is the purpose of useState in React Native?',
+    options: [
+      'To create animations',
+      'To define component styles',
+      'To manage state in a functional component',
+      'To handle navigation'
+    ],
+    answer: 'To manage state in a functional component',
   },
   {
-    question: 'Which language is used for React Native?',
-    options: ['Swift', 'Java', 'JavaScript', 'Kotlin'],
-    answer: 'JavaScript',
+    question: 'What does conditional rendering allow you to do?',
+    options: [
+      'Prevent rendering of specific components based on logic',
+      'Update the Expo Go app',
+      'Change font sizes globally',
+      'Import multiple components at once'
+    ],
+    answer: 'Prevent rendering of specific components based on logic',
   },
   {
-    question: 'Who developed the theory of relativity?',
-    options: ['Newton', 'Tesla', 'Einstein', 'Edison'],
-    answer: 'Einstein',
+    question: 'Why would you use TouchableOpacity in React Native?',
+    options: [
+      'To show an alert dialog',
+      'To display scrollable content',
+      'To provide a button that responds visually to touches',
+      'To apply a CSS class'
+    ],
+    answer: 'To provide a button that responds visually to touches',
   },
 ];
 
-export default function Quiz() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+export default function FlashcardQuiz() {
+  const [currentIndex, setCurrentIndex] = _____2_____(0);
+  const [selectedOption, setSelectedOption] = useState(_____3_____);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
 
   const currentQuestion = questions[currentIndex];
 
-  const handleOptionPress = (option: string) => {
+  const handleOptionPress = (option) => {
     setSelectedOption(option);
-
-    if (option === currentQuestion.answer) {
+    if (option === currentQuestion.____4_____) {
       setScore(score + 1);
     }
 
     setTimeout(() => {
-      if (currentIndex + 1 < questions.length) {
+      if (currentIndex + 1 < questions._____5_____) {
         setCurrentIndex(currentIndex + 1);
         setSelectedOption(null);
       } else {
@@ -47,8 +62,8 @@ export default function Quiz() {
   const restartQuiz = () => {
     setCurrentIndex(0);
     setScore(0);
-    setShowScore(false);
     setSelectedOption(null);
+    setShowScore(_____6_____);
   };
 
   return (
@@ -56,29 +71,28 @@ export default function Quiz() {
       {showScore ? (
         <View>
           <Text style={styles.title}>Quiz Complete!</Text>
-          <Text style={styles.score}>Your score: {score}/{questions.length}</Text>
-          <TouchableOpacity onPress={restartQuiz} style={styles.button}>
-            <Text style={styles.buttonText}>Restart</Text>
+          <Text style={styles.score}>
+            Your score: {score}/{questions.length}
+          </Text>
+          <TouchableOpacity style={styles.button} onPress={_____7_____}>
+            <Text style={styles.buttonText}>Restart Quiz</Text>
           </TouchableOpacity>
         </View>
       ) : (
         <View>
           <Text style={styles.title}>Question {currentIndex + 1}</Text>
           <Text style={styles.question}>{currentQuestion.question}</Text>
-          {currentQuestion.options.map((option, index) => {
+          {currentQuestion.options.map((option, idx) => {
             const isCorrect = option === currentQuestion.answer;
-            const isSelected = option === selectedOption;
-
-            let optionStyle = styles.option;
-            if (isSelected) {
-              optionStyle = isCorrect ? styles.correct : styles.incorrect;
-            }
-
+            const isSelected = selectedOption === option;
+            const optionStyle = isSelected
+              ? isCorrect ? styles.correct : styles.incorrect
+              : styles.option;
             return (
               <TouchableOpacity
-                key={index}
-                onPress={() => handleOptionPress(option)}
+                key={idx}
                 style={optionStyle}
+                onPress={() => handleOptionPress(option)}
                 disabled={!!selectedOption}
               >
                 <Text style={styles.optionText}>{option}</Text>
@@ -91,18 +105,20 @@ export default function Quiz() {
   );
 }
 
+
+// Simple inline styling using StyleSheet
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
     justifyContent: 'center',
-    backgroundColor: '#f2f2f2',
+    padding: 20,
+    backgroundColor: '#fff',
   },
   title: {
     fontSize: 28,
-    marginBottom: 10,
-    fontWeight: 'bold',
     textAlign: 'center',
+    fontWeight: 'bold',
+    marginBottom: 10,
   },
   question: {
     fontSize: 20,
@@ -110,20 +126,20 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   option: {
+    backgroundColor: '#eee',
     padding: 15,
-    backgroundColor: '#e0e0e0',
     marginVertical: 6,
     borderRadius: 10,
   },
   correct: {
-    padding: 15,
     backgroundColor: '#b9fbc0',
+    padding: 15,
     marginVertical: 6,
     borderRadius: 10,
   },
   incorrect: {
-    padding: 15,
     backgroundColor: '#ffadad',
+    padding: 15,
     marginVertical: 6,
     borderRadius: 10,
   },

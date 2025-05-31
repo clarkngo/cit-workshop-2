@@ -8,6 +8,9 @@
 2. https://docs.expo.dev/tutorial/create-your-first-app/
 3. https://docs.expo.dev/tutorial/add-navigation/
 
+If testing on web version:
+`npx expo install react-dom react-native-web @expo/metro-runtime`
+
 What is 
 - React Native?
 - Expo Go?
@@ -33,3 +36,5 @@ What is
 3. `Animated.sequence` and `Animated.
 
 Let them customized it
+
+
