@@ -1,6 +1,6 @@
 Check the Problems tab and fill in the blanks
-1. Right-click at `exercises/02-flashcard-quiz` then click Open in Integrated Terminal
-2. `npx create-expo-app@latest .`
+1. Right-click at `exercises` then click Open in Integrated Terminal
+2. `npx create-expo-app@latest 02-flashcard-quiz`
 3. Paste this code and fix it:
 ```
 import React, { _____1_____ } from 'react';
